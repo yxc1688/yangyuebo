@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+    visibility: hidden;
+}
+ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,label,form,fieldset,legend,header,
+footer,nav,section,aside,dialog,figure,figcaption,hgroup,article,canvas{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 20px;
+    user-select:none;
+}
+body{
+    font-family:'NotoSansCJKsc-Light';
+}
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../fonts/DINRg___.eot') format('embedded-opentype');
+    src: url('../fonts/DINRg___.woff') format('woff');
+}
+@font-face {
+    font-family: 'DIN-light';
+    src: url('../fonts/DINOT-Light.eot') format('embedded-opentype');
+    src: url('../fonts/DINOT-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc-Thin';
+    src: url('../fonts/noto-sans-sc-v4-chinese-simplified_latin-100.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc-Medium';
+    src: url('../fonts/noto-sans-sc-v4-chinese-simplified_latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc-Regular';
+    src: url('../fonts/noto-sans-sc-v4-chinese-simplified_latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc-Light';
+    src: url('../fonts/noto-sans-sc-v4-latin_chinese-simplified-300.woff') format('woff');
+}
+
+.ellipsis{
+    white-space: nowrap;/*空白不换行*/
+    overflow: hidden;/*溢出隐藏*/
+    text-overflow: ellipsis;/*显示省略号*/
+}
+table{
+    border-collapse:collapse ;
+    border-spacing:0 ;
+}
+/*清除谷歌下search的叉*/
+input::-webkit-search-cancel-button{
+    display: none;
+}
+/*清除IE下search的叉*/
+input[type=search]::-ms-clear{
+    display: none;
+}
